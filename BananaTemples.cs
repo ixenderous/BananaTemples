@@ -26,12 +26,13 @@ public class BananaTemples : BloonsTD6Mod
         
         if (!Settings.ModEnabled || !InGameData.CurrentGame.IsSandbox) return;
 
-        result.GetTower("BananaFarm", 0, 0, 0).footprint = new CircleFootprintModel("CircleFootprintModel_Circle Footprint", 11, false, false, false);
-
+        var baseSuper = result.GetTower("BananaFarm", 0, 0, 0);
+        baseSuper.footprint = new CircleFootprintModel("CircleFootprintModel_Circle Footprint", 11, false, false, false);
+        baseSuper.radius = 11;
+        
         var temple = result.GetTower("BananaFarm", 0, 1, 0);
         temple.footprint = new RectangleFootprintModel("RectangleFootprintModel_", 37, 40, false, true, false);
         temple.radius = 20;
-        temple.RadiusSquared = temple.radius * temple.radius;
         temple.areaTypes = new[] {
             AreaType.water,
             AreaType.land
@@ -40,7 +41,6 @@ public class BananaTemples : BloonsTD6Mod
         var tsg = result.GetTower("BananaFarm", 0, 2, 0);
         tsg.footprint = new RectangleFootprintModel("RectangleFootprintModel_", 37, 40, false, true, false);
         tsg.radius = 25;
-        tsg.RadiusSquared = tsg.radius * tsg.radius;
         tsg.areaTypes = new[] {
             AreaType.water,
             AreaType.land
