@@ -6,7 +6,7 @@
 BananaTemples
 </h1>
 
-In sandbox, makes 000 farms place like base supers, 010 farms place like sun temples, and 020 farms place like tsgs. Useful for testing temples setups.
+In sandbox, makes 000 farms place like base supers, 010 farms place like sun temples, and 020 farms place like tsgs. Useful for testing temple placements for chimps.
 Must be enabled when joining a match to take effect.
 
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
